@@ -1,0 +1,42 @@
+
+
+// ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩                                                 
+// DO NOT ALTER THE TEXT BETWEEN THESE LINES =========={M{E{R{L{I{N{1}N}I}L}R}E}M}=====================================                                                
+let n = 7
+// DO NOT ALTER THE TEXT BETWEEN THESE LINES =========={M{E{R{L{I{N{1}N}I}L}R}E}M}=====================================                                                
+// ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧                                                 
+
+   
+// Add your code below:                                                                                                                                                
+
+func factorial(n: Int) {
+    var f = n
+
+    if(f < 0) {
+        print("Calculating factorial(\(f))...")
+
+        print("Terminal case, returning 1.")
+    }
+    while(f >= 1)
+    {
+        print("Calculating factorial(\(f))...")
+        f -= 1
+    }
+    f = n
+    var y = 1
+    var z = 1
+    while (y <= n) {
+        if y <= 1 {
+            print ("Terminal case, returning \(z).")
+            y += 1
+        }
+
+        else{
+            z = y*z
+            y += 1
+            print("Non-terminal case, returning \(z).")
+                    }
+    }
+    print("The final result is: \(z).")
+}
+factorial(n:n)
